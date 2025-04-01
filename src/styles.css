@@ -9,20 +9,29 @@ body,
 }
 
 nav {
-    position: fixed;
     display: flex;
-    background-color: rgba(29, 29, 29, 0.733);
     width: 100%;
+    position: fixed;
+    background-color: rgba(29, 29, 29, 0.733);
     height: 70px;
-    justify-content: center;
-    gap: 500px;
     z-index: 2;
+}
+
+.nav-container {
+    display: flex;
+    width: min(1200px, 100%);
+    height: 70px;
+    justify-content: space-between;
+    z-index: 2;
+    margin: 0 auto;
 }
 
 .nav-buttons {
     display: flex;
     justify-content: center;
     gap: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .nav-logo {
@@ -31,6 +40,8 @@ nav {
     display: flex;
     align-items: center;
     color: whitesmoke;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .nav-buttons button {
