@@ -92,7 +92,7 @@ nav {
 .about-section {
     display: flex;
     padding: 60px 0px;
-    background-color: whitesmoke;
+    background-color: #EBEBEA;
     justify-content: center;
     align-items: center;
     gap: 100px; 
@@ -108,13 +108,17 @@ nav {
 }
 
 .about-section-text > * {
-    color: rgb(36, 36, 36);
+    color: #1D140C;
 }
 
 .about-section-text h2 {
     font-size: 38px;
     font-weight: bold;
-    color: goldenrod;
+    color: #1D140C;
+}
+
+.about-section-text h2 em {
+    color: #65472A;
 }
 
 .about-section-text p {
@@ -129,12 +133,12 @@ nav {
     width: fit-content;
     padding: 10px 20px;
     font-size: 20px;
-    border: 2px solid goldenrod;
+    border: 2px solid #A97E4C;
     border-radius: 4px;
     font-weight: bold;
     box-shadow: 0px 4px 15px -4px gray;
-    background-color: wheat;
-    color: darkgoldenrod;
+    background-color: #90663C;
+    color: #D0B99F;
 }
 
 .about-images {
