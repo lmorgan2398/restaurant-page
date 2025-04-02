@@ -102,6 +102,24 @@ export function renderHome(content){
         button.textContent = 'MAKE A RESERVATION';
         reserveSection.appendChild(button);
     })();
+
+    (function renderContactSection() {
+        const contactSection = document.createElement('div');
+        siteHome.appendChild(contactSection);
+        contactSection.classList.add('contact-section');
+
+        const h3 = document.createElement('h3');
+        contactSection.appendChild(h3);
+        h3.textContent = 'CHEZ VOUS';
+
+        const p1 = document.createElement('p');
+        contactSection.appendChild(p1);
+        p1.textContent = 'Phone: xxx-xxx-FAKE';
+
+        const p2 = document.createElement('p');
+        contactSection.appendChild(p2);
+        p2.textContent = 'Email: notarealemail@fakeservice.com:';
+    })();
 }
 
 
