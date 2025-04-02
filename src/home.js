@@ -118,7 +118,7 @@ export function renderHome(content){
 
         const p2 = document.createElement('p');
         contactSection.appendChild(p2);
-        p2.textContent = 'Email: notarealemail@fakeservice.com:';
+        p2.textContent = 'Email: notarealemail@fakeservice.com:'; 
     })();
 }
 
