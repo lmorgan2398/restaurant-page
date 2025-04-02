@@ -65,7 +65,43 @@ export function renderHome(content){
         aboutSectionImages.appendChild(aboutImage2);
     })();
 
+    (function renderReserveSection() {
+        const reserveSection = document.createElement('div');
+        siteHome.appendChild(reserveSection);
+        reserveSection.classList.add('reserve-section');
 
+        const hours = document.createElement('div');
+        reserveSection.appendChild(hours);
+        hours.classList.add('hours');
+
+        const h2 = document.createElement('h2');
+        hours.appendChild(h2);
+        h2.textContent = 'HOURS OF OPERATION';
+
+        const p1 = document.createElement('p');
+        p1.textContent = 'All dinner services are provided by reservation only, limited to evening hours on the weekend. Available starting times are early because of the expansive nature of the full-course dinner. Expect the event to run for several hours.';
+        hours.appendChild(p1);
+
+        const p2 = document.createElement('p');
+        p2.textContent = 'You may schedule a start time during the following hours:';
+        hours.appendChild(p2);
+
+        const p3 = document.createElement('p');
+        p3.textContent = 'Fridays 6:00 p.m. - 8:00 p.m.';
+        hours.appendChild(p3);
+
+        const p4 = document.createElement('p');
+        p4.textContent = 'Saturdays 5:00 p.m. - 9:00 p.m.';
+        hours.appendChild(p4);
+
+        const p5 = document.createElement('p');
+        p5.textContent = 'Sundays 5:00 p.m. - 8:00 p.m.';
+        hours.appendChild(p5);
+
+        const button = document.createElement('button');
+        button.textContent = 'MAKE A RESERVATION';
+        reserveSection.appendChild(button);
+    })();
 }
 
 
