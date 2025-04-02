@@ -162,12 +162,12 @@ nav {
     color: #D0B99F;
 }
 
-.about-images {
+.about-section-images {
     display: flex;
     gap: 50px;
 }
 
-.about-images img {
+.about-section-images img {
     width: 275px;
     height: 400px;
 }
