@@ -210,3 +210,58 @@ nav {
 .contact-section h3 {
     font-size: 24px;
 }
+
+
+
+/* Styling for menu page */
+
+.site-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.site-menu h1 {
+    font-size: 36px;
+    width: min-content;
+    border-bottom: 2px solid black;
+    text-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+#menu {
+    column-width: 320px;
+    column-gap: 10px;
+    width: max(50%, 400px);
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+    right: -80px;
+}
+
+.category {
+    break-inside: avoid;
+    margin-bottom: 30px;
+}
+
+.category h2 {
+    border-bottom: 2px solid black;
+    width: min-content;
+    text-wrap: nowrap;
+    padding-bottom: 4px;
+}
+
+.item {
+    display: inline-block;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.item h3,
+.price {
+    display: inline;
+    margin: 0px;
+}
