@@ -56,7 +56,7 @@ nav {
     color: whitesmoke;
 }
 
-.nav-buttons button:hover {
+button:hover {
     cursor: grab;
 }
 

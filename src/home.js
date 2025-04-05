@@ -25,6 +25,7 @@ export function renderHome(content){
         const button = document.createElement('button');
         button.textContent = 'EXPLORE OUR MENU';
         heroSection.appendChild(button);
+        button.classList.add('menu');
     })();
 
     (function renderAboutSection() {
