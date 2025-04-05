@@ -30,7 +30,27 @@ body.addEventListener('click', (event) => {
         clearContent();
         renderAbout(content);
         window.scrollTo(0, 0);
+    } else if(event.target.classList.contains('reserve')){
+        clearContent();
+        renderComingSoon(content);
+        window.scrollTo(0,0);
+    } else if(event.target.classList.contains('contact')){
+        clearContent();
+        renderComingSoon(content);
+        window.scrollTo(0,0);
     }
 });
+
+
+const renderComingSoon = function(div){
+    const comingSoonDiv = document.createElement('div');
+    div.appendChild(comingSoonDiv);
+    comingSoonDiv.classList.add('coming-soon-div');
+
+    const p = document.createElement('p');
+    comingSoonDiv.appendChild(p);
+    p.textContent = 'Coming soon!';
+    p.classList.add('coming-soon');
+}
 
 console.log('working');

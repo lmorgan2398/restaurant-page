@@ -331,3 +331,19 @@ button:hover {
     color: whitesmoke;
     font-weight: bold;
 }
+
+/* Coming soon render styling */
+
+.coming-soon-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 300px;
+}
+
+.coming-soon {
+    font-size: 64px;
+    font-style: italic;
+}
