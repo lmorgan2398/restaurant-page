@@ -20,6 +20,46 @@
             </div>
         </nav>
     </header>
-    <div id="content"></div>
+    <div id="content">
+        <div class="site-about">
+            <div class="site-about-text">
+                <h1>Chez Vous / French / [shay-VOO] / "At Your Home"</h1>
+                <p>During the pandemic, a passion for French cooking blossomed into Chez Vous, a way to bring people together. Inspired by years of French language study, the chef began creating intimate, multi-course dinners for family and friends. These meals, prepared by Chez Vous, were more than just food; they were a chance to share stories and enjoy each other's company during a time of isolation.</p>
+                <p>Word spread, and requests for catering from Chez Vous began. Now, the chef offers bespoke French-inspired dinners in your home. The goal of Chez Vous is to create memorable meals that celebrate connection, where each dish is an invitation to gather and enjoy the warmth of shared company, bringing a touch of French conviviality to your dining table.</p>
+                <p>To reserve a truly unique dining experience with Chez Vous, participants will select either a 3, 5, or 7-course meal. From there, they will choose their preferred dishes from a curated menu for each course. Once a date and estimated guest count are confirmed, the chef will provide a personalized quote and begin designing an unforgettable evening. As a special touch, live piano music, performed by the chef, will accompany portions of the meal, enhancing the ambiance and creating a truly memorable occasion with Chez Vous.</p>
+            </div>
+            <div class="gallery-container">
+                <button class="left-button"><</button>
+                <div class="gallery">
+                    <img src="images/toast1.jpg" alt="A couple of wine glasses raised in a toast.">
+                    <img src="images/cheese.jpg" alt="A wooden tray with a variety of cheeses.">
+                    <img src="images/milles-feuilles.jpg" alt="An ornate milles-feuilles, covered in white-and-brown icing.">
+                    <img src="images/beef.jpg" alt="A plated serving of beef bourguignon covered in gravy.">
+                    <img src="images/toast2.jpg" alt="A couple of wine glasses raised in a toast.">
+                    <img src="images/soup.jpg" alt="A bowl of French onion soup covered in cheese and garnished with a baguette slice.">
+                    <img src="images/dessert.jpg" alt="An image of a bottle of wine, a glass filled with a garnished chocollate mousse, and a glass of wine.">
+                </div>
+                <button class="right-button">></button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const leftButton = document.querySelector('.left-button');
+        const rightButton = document.querySelector('.right-button');
+        const gallery = document.querySelector('.gallery');
+
+        leftButton.addEventListener('click', () => {
+            gallery.scrollBy({
+                left: -350,
+                behavior: 'smooth'
+            });
+        })
+        rightButton.addEventListener('click', () => {
+            gallery.scrollBy({
+                left: 350,
+                behavior: 'smooth'
+            });
+        })
+    </script>
 </body>
 </html>

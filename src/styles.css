@@ -216,6 +216,7 @@ button:hover {
 /* Styling for menu page */
 
 .site-menu {
+    background-color: #EBEBEA;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -264,4 +265,69 @@ button:hover {
 .price {
     display: inline;
     margin: 0px;
+}
+
+/* Styling for the about page */
+
+.site-about {
+    background-color: #EBEBEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.site-about-text {
+    width: 700px;
+}
+
+.site-about-text h1 {
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.site-about-text p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.gallery-container {
+    box-sizing: content-box;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    border: 4px solid rgba(29, 29, 29);
+    height: min-content;
+}
+
+.gallery {
+    width: 700px;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 350px;
+    display: flex;
+    justify-content: start;
+    transition: transform 0.3s ease;
+}
+
+.gallery img {
+    width: 350px;
+    height: 350px;
+    padding: none;
+    gap: none;
+    margin: none;
+    border: none;
+}
+
+.left-button, 
+.right-button {
+    height: 350px;
+    width: 50px;
+    font-size: 32px;
+    background-color: rgba(29, 29, 29, 0.88);
+    color: whitesmoke;
+    font-weight: bold;
 }
