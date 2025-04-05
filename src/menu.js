@@ -11,9 +11,11 @@ export function renderMenu(div) {
     siteMenu.appendChild(menuContainer);
     menuContainer.classList.add('menu-container');
 
+
+    // Create function to render each category
     function renderCategory(type, title){
         const category = document.createElement('div');
-        menu.appendChild(category);
+        menuContainer.appendChild(category);
         category.classList.add('category');
         category.id = type;
         
@@ -21,7 +23,20 @@ export function renderMenu(div) {
         category.appendChild(h2);
         h2.textContent = title;
     }
+
+    // Call render category function for each category
+    renderCategory('aperitif', 'L\'Apéritif');
+    renderCategory('entree', 'L\Entrée');
+    renderCategory('plat-principal', 'Le Plat Principal');
+    renderCategory('salade', 'La Salade');
+    renderCategory('fromage', 'Le Fromage');
+    renderCategory('dessert', 'Le Dessert');
+    renderCategory('digestif', 'Le Digestif');
+
+
 }
+
+
 
 
 
